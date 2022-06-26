@@ -31,7 +31,7 @@ function Messages() {
 
        <div className="space-y-10 p-4">
            {data.map((message)=>(
-            <Message id={message.id} message={message}/>
+            <Message key={message.id} message={message}/>
            ))}
        </div>
        <div className=" flex justify-center">
